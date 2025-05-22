@@ -1,7 +1,16 @@
 {
     "name": "aionteck/laravel-scout-typesense-driver",
     "description": "Laravel 12 TypeSense driver for laravel/scout",
+    "keywords": [
+        "laravel",
+        "scout-driver",
+        "typesense",
+        "laravel-scout",
+        "laravel-scout-driver",
+        "search"
+    ],
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "aionteck",
@@ -11,7 +20,16 @@
     "require": {
         "php": "^8.2",
         "laravel/scout": "^10.0",
-        "typesense/typesense-php": "^5.1"
+        "typesense/typesense-php": "^5.1",
+        "illuminate/support": "^11.0",
+        "illuminate/database": "^11.0",
+        "illuminate/bus": "^11.0",
+        "illuminate/contracts": "^11.0",
+        "illuminate/pagination": "^11.0",
+        "illuminate/queue": "^11.0"
+    },
+    "require-dev": {
+        "symfony/http-client": "^5.4|^7.0"
     },
     "autoload": {
         "psr-4": {
