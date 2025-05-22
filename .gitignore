@@ -1,0 +1,8 @@
+/docker-compose.yml
+/docker-compose.backend.common.yml
+/Dockerfile
+/docker
+/composer.lock
+.idea
+.tmp
+vendor
