@@ -1,0 +1,30 @@
+{
+    "name": "aionteck/laravel-scout-typesense-driver",
+    "description": "Laravel 12 TypeSense driver for laravel/scout",
+    "type": "library",
+    "authors": [
+        {
+            "name": "aionteck",
+            "email": "tema0090@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8,2",
+        "laravel/scout": "^10.0",
+        "typesense/typesense-php": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aionteck\\LaravelScoutTypesenseDriver\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aionteck\\ScoutTypesense\\ScoutTypesenseServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
