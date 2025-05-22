@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "php": "^8,2",
+        "php": "^8.2",
         "laravel/scout": "^10.0",
         "typesense/typesense-php": "^5.1"
     },
