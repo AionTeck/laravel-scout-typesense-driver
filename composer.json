@@ -39,7 +39,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Aionteck\\ScoutTypesense\\ScoutTypesenseServiceProvider"
+                "Aionteck\\LaravelScoutTypesenseDriver\\Providers\\ScoutTypesenseServiceProvider"
             ]
         }
     },
