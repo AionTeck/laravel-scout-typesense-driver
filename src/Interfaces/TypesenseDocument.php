@@ -4,7 +4,10 @@ namespace Aionteck\LaravelScoutTypesenseDriver\Interfaces;
 
 interface TypesenseDocument
 {
-    public function searchableAs(): string;
+    /**
+     * @return string
+     */
+    public function searchableAs();
 
     /**
      * @return string[]
