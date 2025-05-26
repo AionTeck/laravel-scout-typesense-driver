@@ -3,7 +3,6 @@
 namespace Aionteck\LaravelScoutTypesenseDriver\Provides;
 
 use Aionteck\LaravelScoutTypesenseDriver\Core\TypesenseEngine;
-use Illuminate\Support\Facades\App;
 use Illuminate\Contracts\Config\Repository as Config;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Scout\EngineManager;
@@ -13,11 +12,14 @@ class ScoutTypesenseServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        $this->app->singleton(TypesenseEngine::class, function (App $app) {
+        $this->app->singleton(Client::class, function ($app) {
             $config = $app->make(Config::class);
+            return new Client($config->get('scout.typesense'));
+        });
 
+        $this->app->singleton(TypesenseEngine::class, function ($app) {
             return new TypesenseEngine(
-                new Client($config->get('scout.typesense'))
+                $app->make(Client::class)
             );
         });
     }
