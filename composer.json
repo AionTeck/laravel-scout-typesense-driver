@@ -20,15 +20,15 @@
     "require": {
         "php": "^8.2",
         "laravel/scout": "^10.0",
-        "typesense/typesense-php": "^5.1",
+        "typesense/typesense-php": "^5.1"
+    },
+    "require-dev": {
         "illuminate/support": "^11.0",
         "illuminate/database": "^11.0",
         "illuminate/bus": "^11.0",
         "illuminate/contracts": "^11.0",
         "illuminate/pagination": "^11.0",
-        "illuminate/queue": "^11.0"
-    },
-    "require-dev": {
+        "illuminate/queue": "^11.0",
         "symfony/http-client": "^5.4|^7.0"
     },
     "autoload": {
